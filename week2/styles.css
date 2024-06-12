@@ -1,0 +1,113 @@
+body {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  background-color: #e0f7fa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  width: 400px;
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 20px;
+  color: #0277bd;
+  font-size: 24px;
+}
+
+.input-group {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+input[type="text"], input[type="date"] {
+  width: 45%;
+  padding: 15px;
+  border: 1px solid #81d4fa;
+  border-radius: 5px;
+  font-size: 16px;
+  background-color: #e1f5fe;
+  color: #01579b;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+input[type="text"]:focus, input[type="date"]:focus {
+  border-color: #039be5;
+}
+
+button {
+  padding: 15px;
+  border: none;
+  border-radius: 5px;
+  background-color: #0288d1;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+  background-color: #0277bd;
+  transform: scale(1.05);
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  border: 1px solid #81d4fa;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  font-size: 16px;
+  background-color: #e1f5fe;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+li:hover {
+  background-color: #b3e5fc;
+  transform: scale(1.02);
+}
+
+li.completed {
+  text-decoration: line-through;
+  color: #90a4ae;
+}
+
+li button {
+  margin-left: 10px;
+  background-color: #d32f2f;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+li button:hover {
+  background-color: #c62828;
+  transform: scale(1.05);
+}
+
+li .edit-button {
+  background-color: #388e3c;
+  margin-left: 10px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+li .edit-button:hover {
+  background-color: #2e7d32;
+  transform: scale(1.05);
+}
